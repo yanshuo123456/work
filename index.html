@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>git操作命令</title>
+</head>
+
+<body>
+    <!-- 
+         git congig --global user.name "yanshuo123456"
+
+        git config ==global user.email "yanshuo123"
+     -->
+
+
+    <!-- 
+        自己创建的文件推送到已有的github远程仓库
+
+        cd “创建的文件夹”
+
+        git clone “仓库链接”
+
+        cd luoqing
+
+        git init(初始化仓库)
+
+        type null>index.js (创建文件的代码)
+
+        rm index.js(删除本地仓库文件的代码)
+
+        git rm -r -cached index.js(删除远程仓库文件的代码)
+
+        git add *(删除之后暂存到本地仓库)
+        
+        git commit -m "写入备注"
+
+        git push origin master(提交到远程仓库)
+
+     -->
+
+
+
+    <!-- 
+        自己创建的文件推送到  “  新的  ”  github远程仓库
+
+        cd “创建的文件夹”
+
+        mkdir one(创建一个新的文件夹并且cd)
+
+        git init(初始化仓库)
+
+        type null>index.js (创建文件的代码)
+
+        rm index.js(删除本地仓库文件的代码)
+
+        git rm -r -cached index.js(删除远程仓库文件的代码)
+
+        git add *(删除之后暂存到本地仓库)
+        
+        git commit -m "写入备注"
+
+        git remoted add origin "仓库链接"
+
+        git push -u origin master(提交到远程仓库)
+
+     -->
+
+    <!-- 
+        删除远程文件的命令： 
+
+         git rm -r --cached (文件名)
+
+         git commit -m "delete file"
+
+         git push origin master
+
+         
+     -->
+
+    <!-- 
+         提交代码到github上的命令
+
+         git add *
+
+         git commit -m "first commit"
+
+         git push origin master
+      -->
+
+    <!-- 
+          查看远程仓库的名字：git remote -v
+
+          从远程下载：git pull 
+
+          把添加到暂存区的文件从暂存区撤回：git reset head 文件名  
+
+          提交id,回退到某个历史版本：git reset --hard
+
+          查看命令历史，回到未来的某个版本：git reflog
+
+          查看修改内容：git diff
+
+          查看提交历史：git status
+
+          用仓库中该文件的最新版本覆盖工作区该文件：git checkout -- 文件名
+
+       -->
+
+</body>
+
+</html>
